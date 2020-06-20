@@ -1,0 +1,263 @@
+#header {
+	width: 100%;
+	height: 35px;
+	background: gainsboro;
+}
+
+#h-content {
+	width: 1196px;
+	margin: 0 auto;
+	height: 35px;
+	padding-left: 4px;
+}
+
+#h-content .h-content {
+	display: inline;
+}
+
+#taoxiaopu {
+	height: 70px;
+	width: 100%;
+	background: red;
+	border-radius: 20px;
+}
+
+.link {
+	height: 35px;
+	line-height: 35px;
+	display: inline;
+}
+
+.link a {
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+}
+
+.red:hover {
+	color: #f00;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dropdown a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.dropdown:hover {
+	background: #fff;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background: #fff;
+	border-left: #E8E8E8 solid 1px;
+	border-right: #E8E8E8 solid 1px;
+	border-bottom: #E8E8E8 solid 1px;
+}
+
+.dropdown-content>a:hover {
+	background: gainsboro;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+#area a.link {
+	padding-left: 5px;
+	padding-right: 30px;
+}
+
+#area .dropdown-content {
+	overflow-y: scroll;
+	padding: 8px 0;
+	max-height: 270px;
+}
+
+#area .dropdown-content a {
+	width: 245px;
+	padding: 7px;
+}
+
+#login>a {
+	color: #f00;
+	padding-right: 5px;
+}
+
+#phone>a {
+	margin-left: 15px;
+}
+
+#right-content {
+	float: right;
+	height: 35px;
+}
+
+#my-taobao>a {
+	padding-left: 5px;
+	padding-right: 20px;
+}
+
+#my-taobao .dropdown-content {
+	padding: 8px 0;
+}
+
+#my-taobao .dropdown-content a {
+	width: 75px;
+	padding: 6px 0px 6px 6px;
+}
+
+#shop-car>a {
+	padding-left: 20px;
+	padding-right: 25px;
+}
+
+#shop-car .dropdown-content {
+	width: 270px;
+	height: 35px;
+	padding: 20px 0 0 35px;
+}
+
+#shop-car .dropdown-content a {
+	display: inline-block;
+	background: #f00;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+#bookmarks .dropdown-content {
+	padding: 8px 0;
+}
+
+#bookmarks .dropdown-content a {
+	width: 60px;
+	padding: 5px;
+}
+
+#bookmarks>a {
+	padding-left: 20px;
+	padding-right: 25px;
+}
+
+#goods-classify>a {
+	padding-left: 5px;
+	padding-right: 10px;
+}
+
+#cell-center .dropdown-content{
+	padding: 7px 0;
+}
+
+#cell-center .dropdown-content a {
+	width: 75px;
+	padding: 5px 3px 4px 4px;
+}
+
+#cell-center>a {
+	padding-left: 5px;
+	padding-right: 20px;
+}
+
+#contcat-customer-service .dropdown-content{
+	padding: 8px 0;
+}
+
+#contcat-customer-service .dropdown-content a {
+	width: 60px;
+	padding: 5px;
+}
+
+#contcat-customer-service>a {
+	padding-left: 5px;
+	padding-right: 20px;
+}
+
+#website-propagation>a {
+	padding-left: 25px;
+	padding-right: 30px;
+}
+
+#website-propagation:hover #dropdown-content{
+	display: flex;
+	left: -1093px;
+}
+
+.propagations {
+	height: fit-content;
+	width: 298px;
+	border-right: #E8E8E8 solid 1px;
+}
+
+.propagations:last-child {
+	border-right: none;
+}
+
+.title {
+	font-size: 17px;
+	padding: 8px 10px;
+}
+
+.item-container {
+	display: flex;
+}
+
+.item-col {
+	margin-right: auto;
+}
+
+.item-col:first-child {
+	margin-left: 8px;
+}
+
+.item-col:last-child {
+	padding-right: 8px;
+}
+
+.item {
+	padding: 4px 8px;
+	margin-bottom: 5px;
+	width: fit-content;
+}
+
+.item:hover {
+	color: #fff;
+}
+
+#theme-market .title {
+	color: #f00;
+}
+
+#theme-market .item:hover {
+	background: #f00;
+}
+
+#characteristic-market .title {
+	color: #80aa40;
+}
+
+#characteristic-market .item:hover {
+	background: #80aa40;
+}
+
+#aliapp .title {
+	color: #aa007f;
+}
+
+#aliapp .item:hover {
+	background: #aa007f;
+}
+
+#taobao-recommand .title {
+	color: #0096e1;
+}
+
+#taobao-recommand .item:hover {
+	background: #0096e1;
+}
