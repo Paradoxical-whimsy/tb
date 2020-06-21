@@ -1,0 +1,144 @@
+#search {
+	background: #fff;
+}
+
+#search-content {
+	display: flex;
+	width: 1190px;
+	margin: 0 auto;
+}
+
+#left-ad {
+	height: 118px;
+	width: 198px;
+	border: #000 solid 1px;
+	text-align: center;
+	line-height: 118px;
+	margin-bottom: 2px;
+}
+
+#search-container {
+	margin-left: 58px;
+	margin-top: 25px;
+}
+
+#labels {
+	display: flex;
+	margin-left: 17px;
+}
+
+.label {
+	padding: 5px 6px 1px 6px;
+	color: #ff2a00;
+	margin-right: 5px;
+}
+
+.label:hover {
+	background: #ffebff;
+	border-radius: 0;
+}
+
+.label.selected {
+	background: #FF2A00;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 6px 6px 0 0;
+}
+
+#search-bar-container {
+	display: flex;
+}
+
+#search-input {
+	border: #FF2A00 solid 2px;
+	border-right: none;
+	height: 34px;
+	border-radius: 19px 0 0 19px;
+	width: 470px;
+	text-indent: 5px;
+}
+
+#search-input:focus {
+	border: #FF2A00 solid 2px;
+	border-right: none;
+	outline: none;
+}
+
+.magnifier {
+	background: url(../img/magnifier.png) no-repeat;
+	background-origin: content-box;
+	background-position: 7px 9px;
+}
+
+#search-file-container {
+	height: 36px;
+	border-top: #FF2A00 solid 2px;
+	border-bottom: #FF2A00 solid 2px;
+}
+
+#search-file-img {
+	width: 22px;
+	margin: 8px 15px 0 40px;
+}
+
+#search-file-img:hover {
+	cursor: pointer;
+}
+
+#search-file {
+	width: 0px;
+}
+
+#search-btn {
+	background: #FF2A00;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	width: 74px;
+	border-radius: 0 19px 19px 0;
+}
+
+#search-recommands {
+	display: flex;
+}
+
+.search-recommand {
+	text-decoration: none;
+	color: #000;
+	margin: 6px 4px 0 0;
+}
+
+#qrcode-container {
+	margin-top: 25px;
+	margin-left: 100px;
+	display: flex;
+}
+
+#close-btn {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	border: #E8E8E8 solid 1px;
+	color: #E8E8E8;
+	text-align: center;
+	line-height: 13px;
+}
+
+#qrcode {
+	display: flex;
+	flex-direction: column;
+	border: #E8E8E8 solid 1px;
+	color: #FF2A00;
+	text-align: center;
+	padding-top: 2px;
+	height: 86px;
+}
+
+#qrcode>img {
+	display: block;
+	background: #112233;
+	height: 63px;
+	width: 63px;
+	margin: 1px 6px 0 5px;
+}
