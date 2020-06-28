@@ -4,7 +4,6 @@ let search_file_img = document.querySelector('#search-file-img');
 let search_file = document.querySelector('#search-file');
 let search_recommands = document.querySelector('#search-recommands');
 
-
 document.querySelector('#labels').addEventListener('click', function (e) {
 	switch (e.target.id) {
 		case 'baobei':
@@ -25,6 +24,7 @@ document.querySelector('#labels').addEventListener('click', function (e) {
 		default:
 			break;
 	}
+	
 	for (el of labels) {
 		if (el === e.target) {
 			el.className = 'label selected';
@@ -37,3 +37,21 @@ document.querySelector('#labels').addEventListener('click', function (e) {
 document.querySelector('#search-input').addEventListener('keyup', (e) => e.target.className = e.target.value ? '' : 'magnifier');
 
 search_file_img.onclick = () => search_file.click();
+
+let news_titles = document.querySelectorAll('.news-title');
+let news_contents = document.querySelectorAll('.news-content');
+let news_cur_index = 0;
+document.querySelector('#news-titles').addEventListener('mouseover', function(e) {
+	for (let i in news_titles) {
+		if (e.target === news_titles[i]) {
+			if (i !== news_cur_index) {
+				news_titles[i].className = 'news-title news-link cur-title';
+				news_titles[news_cur_index].className = 'news-title news-link';
+				news_contents[i].className = 'news-content cur-content';
+				news_contents[news_cur_index].className = 'news-content';
+				news_cur_index = i;
+				break;
+			}
+		}
+	}
+});

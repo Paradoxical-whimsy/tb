@@ -14,7 +14,7 @@
 	border: #000 solid 1px;
 	text-align: center;
 	line-height: 118px;
-	margin-bottom: 2px;
+	margin-bottom: 1px;
 }
 
 #search-container {
@@ -90,7 +90,7 @@
 }
 
 #search-btn {
-	background: #FF2A00;
+	background: linear-gradient(to right, #ff9500, #f50);
 	border: none;
 	color: #fff;
 	font-weight: bold;

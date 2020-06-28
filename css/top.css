@@ -9,7 +9,6 @@
 	min-width: 1190px;
 	margin: 0 auto;
 	height: 36px;
-	/* padding-left: 5px; */
 	position: relative;
 }
 
@@ -70,6 +69,7 @@
 	border-left: #E8E8E8 solid 1px;
 	border-right: #E8E8E8 solid 1px;
 	border-bottom: #E8E8E8 solid 1px;
+	z-index: 1;
 }
 
 .dropdown-content>a:hover {
@@ -197,12 +197,12 @@
 
 #website-propagation:hover #dropdown-content{
 	display: flex;
-	left: -1093px;
+	left: -1087px;
 }
 
 .propagations {
 	height: fit-content;
-	width: 298px;
+	width: 297px;
 	border-right: #E8E8E8 solid 1px;
 }
 
