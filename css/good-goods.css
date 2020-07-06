@@ -1,0 +1,34 @@
+#good-goods {
+	margin-top: 10px;
+	display: flex;
+}
+
+#good-good {
+	width: 550px;
+	background: #fff;
+	padding: 20px;
+}
+
+#goods-title {
+	margin-bottom: 20px;
+}
+
+#goods-container {
+	display: grid;
+	grid-template-columns: repeat(3, 180px);
+	grid-template-rows: repeat(2, 230px);
+	grid-row-gap: 20px;
+	grid-column-gap: 3px;
+}
+
+.goods {
+	width: 182px;
+	height: 240px;
+	overflow: hidden;
+}
+
+.goods > img {
+	width: 180px;
+	height: 180px;
+	display: block;
+}

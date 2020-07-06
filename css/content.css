@@ -424,7 +424,7 @@
 }
 
 .news-title {
-	margin: 18px 0;
+	margin: 19px 0;
 }
 
 .cur-title {
@@ -448,4 +448,54 @@
 
 .news-content .news-link {
 	margin: 0 0 10px 10px;
+}
+
+#quick-enterance {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+}
+
+.quick-enterance {
+	background: #fff;
+	border: #E8E8E8 solid 0.1px;
+	text-align: center;
+	padding-bottom: 12px;
+}
+
+.quick-enterance > img {
+	height: 30px;
+	width: 30px;
+	display: block;
+	padding: 9px 0 8px 0;
+	margin: 0 auto;
+}
+
+#aliapps {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px 15px 8px 15px;
+	background: #fff;
+}
+
+#aliapps > a {
+	color: #000;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: 400;
+	margin-left: 158px;
+}
+
+#aliapps > a:hover {
+	color: #FF2A00;
+}
+
+#aliapp-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.aliapp {
+	height: 33px;
+	width: 33px;
+	margin: 6px;
 }
