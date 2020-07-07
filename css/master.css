@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	min-width: 1000px;
+	overflow-x: hidden;
+	background: #E8E8E8;
+	-webkit-font-smoothing: antialiased;
+}
+
+#propagation {
+	float: right;
+	margin-right: 20px;
+	margin-top: 500px;
+	display: none;
+}
+
+.propagation {
+	border: solid 1px;
+	width: 45px;
+	height: 45px;
+}
+
+* {
+	font-size: 12px;
+}
+
+#ad {
+	height: 80px;
+	background: #fff;
+	margin: 10px auto;
+}

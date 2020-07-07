@@ -1,0 +1,64 @@
+#goods-shop {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#everyday-good-goods,
+#taobao-live {
+	width: 550px;
+	background: #fff;
+	padding: 20px;
+}
+
+.good-goods-title {
+	margin-bottom: 20px;
+	display: inline-block;
+	color: gray;
+}
+
+.goods-shop-container {
+	display: grid;
+	grid-template-columns: repeat(2, 270px);
+	grid-template-rows: repeat(2, 210px);
+	grid-row-gap: 20px;
+	grid-column-gap: 8px;
+}
+
+.shops-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-shop {
+	height: 179px;
+	width: 179px;
+	background: #0096E1;
+}
+
+.right-shops {
+}
+
+.right-shop {
+	height: 88px;
+	width: 89px;
+	background: #0096E1;
+	margin-bottom: 3px;
+}
+
+.goods-shop > .introduce {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.goods-shop > a {
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+	display: inline-block;
+	margin: 5px;
+}
+
+.goods-shop:hover > a {
+	color: #FF2A00;
+}

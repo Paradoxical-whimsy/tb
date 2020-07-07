@@ -15,7 +15,7 @@
 	color: gray;
 }
 
-#goods-container {
+.goods-container {
 	display: grid;
 	grid-template-columns: repeat(3, 180px);
 	grid-template-rows: repeat(2, 260px);
@@ -65,14 +65,6 @@
 	color: gray;
 }
 
-#loves-container {
-	display: grid;
-	grid-template-columns: repeat(3, 180px);
-	grid-template-rows: repeat(2, 260px);
-	grid-row-gap: 20px;
-	grid-column-gap: 3px;
-}
-
 .loves {
 	width: 182px;
 	height: 260px;
@@ -117,7 +109,7 @@
 	line-height: 30px;
 }
 
-#shopping-more {
+.more {
 	color: gray;
 	text-decoration: none;
 	float: right;
