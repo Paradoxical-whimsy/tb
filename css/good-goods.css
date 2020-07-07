@@ -1,6 +1,7 @@
 #good-goods {
 	margin-top: 10px;
 	display: flex;
+	justify-content: space-between;
 }
 
 #good-good {
@@ -11,19 +12,20 @@
 
 #goods-title {
 	margin-bottom: 20px;
+	color: gray;
 }
 
 #goods-container {
 	display: grid;
 	grid-template-columns: repeat(3, 180px);
-	grid-template-rows: repeat(2, 230px);
+	grid-template-rows: repeat(2, 260px);
 	grid-row-gap: 20px;
 	grid-column-gap: 3px;
 }
 
 .goods {
 	width: 182px;
-	height: 240px;
+	height: 260px;
 	overflow: hidden;
 }
 
@@ -31,4 +33,92 @@
 	width: 180px;
 	height: 180px;
 	display: block;
+}
+
+.goods > a {
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+	display: block;
+	margin: 5px;
+}
+
+.goods:hover > a {
+	color: #f50;
+	transition: color .3s;
+}
+
+.introduce {
+	margin: 5px;
+	color: grey;
+}
+
+#loves-shopping {
+	width: 550px;
+	background: #fff;
+	padding: 20px;
+}
+
+#loves-title {
+	margin-bottom: 20px;
+	display: inline-block;
+	color: gray;
+}
+
+#loves-container {
+	display: grid;
+	grid-template-columns: repeat(3, 180px);
+	grid-template-rows: repeat(2, 260px);
+	grid-row-gap: 20px;
+	grid-column-gap: 3px;
+}
+
+.loves {
+	width: 182px;
+	height: 260px;
+	overflow: hidden;
+}
+
+.loves > img {
+	width: 180px;
+	height: 180px;
+	display: block;
+}
+
+.loves > a {
+	text-decoration: none;
+	color: gray;
+	font-size: 15px;
+	display: block;
+	margin: 5px;
+}
+
+.loves:hover > a {
+	color: #f50;
+	transition: color .3s;
+}
+
+.seller {
+	height: 30px;
+	display: flex;
+}
+
+.seller-icon {
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	display: inline-block;
+	background: #000;
+	border-radius: 10px;
+}
+
+.seller-name {
+	display: inline-block;
+	line-height: 30px;
+}
+
+#shopping-more {
+	color: gray;
+	text-decoration: none;
+	float: right;
 }

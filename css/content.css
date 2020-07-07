@@ -81,6 +81,7 @@
 	float: left;
 	background: #fff;
 	position: absolute;
+	z-index: 2;
 }
 
 #left-themes-details {
@@ -199,7 +200,6 @@
 	margin: 10px 0 0 6px;
 	height: 510px;
 	width: 290px;
-	background-color: #00f;
 }
 
 #top-roll-ad-container {
@@ -471,6 +471,7 @@
 }
 
 #aliapps {
+	height: auto;
 	font-size: 15px;
 	font-weight: bold;
 	padding: 5px 15px 8px 15px;
