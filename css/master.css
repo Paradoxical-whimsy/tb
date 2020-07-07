@@ -28,3 +28,7 @@ body {
 	background: #fff;
 	margin: 10px auto;
 }
+
+.border:hover {
+	border: #f50 solid 1px;
+}
