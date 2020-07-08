@@ -32,3 +32,15 @@ body {
 .border:hover {
 	border: #f50 solid 1px;
 }
+
+.container {
+	padding-top: 20px;
+	background: #fff;
+}
+
+.container-title {
+	font-size: 17px;
+	font-weight: bold;
+	text-indent: 20px;
+	display: block;
+}

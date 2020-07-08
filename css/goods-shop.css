@@ -33,7 +33,7 @@
 .left-shop {
 	height: 179px;
 	width: 179px;
-	background: #0096E1;
+	background: yellow;
 }
 
 .right-shops {
@@ -42,7 +42,7 @@
 .right-shop {
 	height: 88px;
 	width: 89px;
-	background: #0096E1;
+	background: yellow;
 	margin-bottom: 3px;
 }
 

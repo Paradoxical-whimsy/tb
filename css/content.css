@@ -471,7 +471,6 @@
 }
 
 #aliapps {
-	height: auto;
 	font-size: 15px;
 	font-weight: bold;
 	padding: 5px 15px 8px 15px;
@@ -483,7 +482,7 @@
 	font-size: 12px;
 	text-decoration: none;
 	font-weight: 400;
-	margin-left: 158px;
+	float: right;
 }
 
 #aliapps > a:hover {
