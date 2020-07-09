@@ -64,3 +64,101 @@
 	line-height: 22px;
 	border-radius: 12px;
 }
+
+#hot {
+	margin-top: 10px;
+}
+
+#hot-title {
+	color: #FF2A00;
+	margin-bottom: 20px;
+}
+
+.hot-label {
+	margin: 0 5px;
+	color: gray;
+	text-decoration: none;
+}
+
+.hot-label:hover {
+	color: #FF2A00;
+}
+
+#hot-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.hot {
+	padding: 20px;
+	border: #E8E8E8 solid 1px;
+}
+
+.hot-content {
+	width: 196px;
+	height: 196px;
+	background: #FF2A00;
+}
+
+.hot-title {
+	display: block;
+	margin: 10px 0;
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	word-wrap: break-word;
+	width: 196px;
+	height: 38px;
+}
+
+.hot-comment,
+.hot-collect {
+	display: inline-block;
+	text-decoration: none;
+	color: gray;
+	margin-bottom: 18px;
+	font-size: 10px;
+}
+
+.hot-new-price {
+	text-decoration: none;
+	color: #FF2A00;
+}
+
+.price {
+	font-size: 20px;
+}
+
+.hot-old-price {
+	text-decoration: line-through;
+	color: gray;
+}
+
+.hot-old-price:hover {
+	text-decoration: none;
+}
+
+.sales {
+	text-decoration: none;
+	color: gray;
+	float: right;
+	margin-top: 9px;
+}
+
+#hot-ad-container {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hot-ad {
+	height: 136px;
+	width: 371px;
+	background: #FF2A00;
+	border: #fff solid 2px;
+}
+
+.hot-ad:hover {
+	border: #FF2A00 solid 2px;
+}

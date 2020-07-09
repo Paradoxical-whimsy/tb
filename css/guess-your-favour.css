@@ -1,0 +1,68 @@
+#guess-your-favour {
+	margin-top: 10px;
+}
+
+#guess-your-favour-title {
+	color: orange;
+}
+
+#guess-your-favour-container {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.guess-your-favour {
+	padding: 20px;
+	border: #E8E8E8 solid 1px;
+	transition: border-color .3s;
+	position: relative;
+}
+
+.guess-your-favour-content {
+	width: 196px;
+	height: 196px;
+	background: orange;
+}
+
+.guess-your-favour-title {
+	display: block;
+	margin: 10px 0;
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	word-wrap: break-word;
+	width: 196px;
+	height: 38px;
+	overflow: hidden;
+}
+
+.guess-your-favour-price {
+	margin-top: 20px;
+}
+
+.find-similar {
+	text-align: center;
+	color: #fff;
+	background: #f50;
+	position: absolute;
+	width: 238px;
+	height: 50px;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 20px 0 15px;
+	left: -1px;
+	bottom: -1px;
+	display: none;
+}
+
+.guess-your-favour:hover > .find-similar {
+	display: block;
+}
+
+.find-more {
+	font-size: 13px;
+	border-top: #fff solid 1px;
+	width: fit-content;
+	margin: 0 auto;
+}
