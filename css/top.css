@@ -272,3 +272,13 @@
 #taobao-recommand .item:hover {
 	background: #0096e1;
 }
+
+#top-search {
+	height: 50px;
+	background: #fff;
+	position: sticky;
+	z-index: 3;
+	width: 100%;
+	top: 0;
+	display: none;
+}

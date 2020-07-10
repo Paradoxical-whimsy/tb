@@ -1,9 +1,9 @@
+//搜索栏
 let labels = document.querySelectorAll('.label');
 let search_input = document.querySelector('#search-input');
 let search_file_img = document.querySelector('#search-file-img');
 let search_file = document.querySelector('#search-file');
 let search_recommands = document.querySelector('#search-recommands');
-
 document.querySelector('#labels').addEventListener('click', function (e) {
 	switch (e.target.id) {
 		case 'baobei':
@@ -38,6 +38,7 @@ document.querySelector('#search-input').addEventListener('keyup', (e) => e.targe
 
 search_file_img.onclick = () => search_file.click();
 
+//news栏
 let news_titles = document.querySelectorAll('.news-title');
 let news_contents = document.querySelectorAll('.news-content');
 let news_cur_index = 0;
@@ -55,3 +56,17 @@ document.querySelector('#news-titles').addEventListener('mouseover', function(e)
 		}
 	}
 });
+
+//顶部搜索栏
+let html = document.querySelector('html');
+let top_search = document.querySelector('#top-search');
+let is_hidden = true;
+document.querySelector('body').onscroll = function() {
+	if (is_hidden && html.scrollTop > 1000) {
+		top_search.style.display = 'block';
+		is_hidden = false;
+	} else if (!is_hidden && html.scrollTop < 1000) {
+		top_search.style.display = 'none';
+		is_hidden = true;
+	}
+};
