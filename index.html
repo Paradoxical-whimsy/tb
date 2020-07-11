@@ -3,30 +3,42 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>tb</title>
-		<link rel="stylesheet" type="text/css" href="./css/master.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/master.css" />
 		<link rel="stylesheet" type="text/css" href="./css/top.css" />
-		<link rel="stylesheet" type="text/css" href="./css/search.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/search.css" />
 		<link rel="stylesheet" type="text/css" href="./css/content.css" />
-		<link rel="stylesheet" type="text/css" href="./css/good-goods.css"/>
-		<link rel="stylesheet" type="text/css" href="./css/goods-shop.css"/>
-		<link rel="stylesheet" type="text/css" href="./css/quality.css"/>
-		<link rel="stylesheet" type="text/css" href="./css/affordable-hot.css"/>
-		<link rel="stylesheet" type="text/css" href="./css/guess-your-favour.css"/>
-		<link rel="stylesheet" type="text/css" href="./css/end-footer.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/good-goods.css" />
+		<link rel="stylesheet" type="text/css" href="./css/goods-shop.css" />
+		<link rel="stylesheet" type="text/css" href="./css/quality.css" />
+		<link rel="stylesheet" type="text/css" href="./css/affordable-hot.css" />
+		<link rel="stylesheet" type="text/css" href="./css/guess-your-favour.css" />
+		<link rel="stylesheet" type="text/css" href="./css/end-footer.css" />
 	</head>
 	<body>
-		<div id="top-search" class="hide">
-			
+		<div id="top-search">
+			<div id="top-search-bar-container">
+				<div id="top-search-select" class="cover">
+					<div id="search-first" class="top-search-select">宝贝</div>
+					<div id="search-second" class="top-search-select">天猫</div>
+					<div id="search-third" class="top-search-select">店铺</div>
+				</div>
+				<input type="text" name="search-input" id="top-search-input" placeholder="      omi欧米女包" class="magnifier" />
+				<div id="top-search-file-container">
+					<img src="./img/camera.png" id="top-search-file-img">
+					<input type="file" name="search-file" id="top-search-file"/>
+				</div>
+				<input type="button" name="search-btn" id="top-search-btn" value="搜索" />
+			</div>
 		</div>
 		<div id="propagation">
-			<div class="propagation">爱逛好货</div>
-			<div class="propagation">好店直播</div>
-			<div class="propagation">品质特色</div>
-			<div class="propagation">实惠特卖</div>
-			<div class="propagation">猜你喜欢</div>
-			<div class="propagation">顶部</div>
-			<div class="propagation">反馈</div>
-			<div class="propagation">暴恐举报</div>
+			<a id="l-good-goods" class="propagation cur-propagation">爱逛好货</a>
+			<a id="l-taobao-live" class="propagation">好店直播</a>
+			<a id="l-quality-characteristic" class="propagation">品质特色</a>
+			<a id="l-affordable" class="propagation">实惠特卖</a>
+			<a id="l-guess-your-favour" class="propagation">猜你喜欢</a>
+			<a href="#" id="top-btn" class="propagation">顶部</a>
+			<a class="propagation">反馈</a>
+			<a class="propagation">暴恐举报</a>
 		</div>
 		<div id="page">
 			<div id="header">
@@ -60,191 +72,190 @@
 					</div>
 					<div id="right-h-content">
 						<div id="my-taobao" class="dropdown">
-								<a href="#" class="link red">我的淘宝</a>
-								<div class="dropdown-content">
-									<a href="#">已买到的宝贝</a>
-									<a href="#">我的足迹</a>
-								</div>
+							<a href="#" class="link red">我的淘宝</a>
+							<div class="dropdown-content">
+								<a href="#">已买到的宝贝</a>
+								<a href="#">我的足迹</a>
 							</div>
-							<div id="shop-car" class="dropdown">
-								<a href="#" class="link red">购物车</a>
-								<div class="dropdown-content">
-									您购物车里还没有任何宝贝。
-									<a href="#">查看我的购物车</a>
-								</div>
+						</div>
+						<div id="shop-car" class="dropdown">
+							<a href="#" class="link red">购物车</a>
+							<div class="dropdown-content">
+								您购物车里还没有任何宝贝。
+								<a href="#">查看我的购物车</a>
 							</div>
-							<div id="bookmarks" class="dropdown">
-								<a href="#" class="link red">收藏夹</a>
-								<div class="dropdown-content">
-									<a href="#">收藏的宝贝</a>
-									<a href="#">收藏的店铺</a>
-								</div>
+						</div>
+						<div id="bookmarks" class="dropdown">
+							<a href="#" class="link red">收藏夹</a>
+							<div class="dropdown-content">
+								<a href="#">收藏的宝贝</a>
+								<a href="#">收藏的店铺</a>
 							</div>
-							<div id="goods-classify" class="link red">
-								<a href="#" class="red">商品分类</a>
+						</div>
+						<div id="goods-classify" class="link red">
+							<a href="#" class="red">商品分类</a>
+						</div>
+						<div class="link">丨</div>
+						<div id="cell-center" class="dropdown">
+							<a href="#" class="link red">千牛卖家中心</a>
+							<div class="dropdown-content">
+								<a href="#">免费开店</a>
+								<a href="#">已卖出的宝贝</a>
+								<a href="#">出售中的宝贝</a>
+								<a href="#">卖家服务市场</a>
+								<a href="#">已买到的宝贝</a>
+								<a href="#">卖家培训中心</a>
+								<a href="#">体检中心</a>
+								<a href="#">问商友</a>
 							</div>
-							<div class="link">丨</div>
-							<div id="cell-center" class="dropdown">
-								<a href="#" class="link red">千牛卖家中心</a>
-								<div class="dropdown-content">
-									<a href="#">免费开店</a>
-									<a href="#">已卖出的宝贝</a>
-									<a href="#">出售中的宝贝</a>
-									<a href="#">卖家服务市场</a>
-									<a href="#">已买到的宝贝</a>
-									<a href="#">卖家培训中心</a>
-									<a href="#">体检中心</a>
-									<a href="#">问商友</a>
-								</div>
+						</div>
+						<div id="contcat-customer-service" class="dropdown">
+							<a href="#" class="link red">联系客服</a>
+							<div class="dropdown-content">
+								<a href="#">消费者客服</a>
+								<a href="#">卖家客服 </a>
 							</div>
-							<div id="contcat-customer-service" class="dropdown">
-								<a href="#" class="link red">联系客服</a>
-								<div class="dropdown-content">
-									<a href="#">消费者客服</a>
-									<a href="#">卖家客服 </a>
-								</div>
-							</div>
-							<div id="website-propagation" class="dropdown">
-								<a href="#" class="link red">网站导航</a>
-								<div id="dropdown-content" class="dropdown-content">
-									<div id="theme-market" class="propagations">
-										<div class="title">
-											主题市场
-										</div>
-										<div class="item-container">
-											<div class="item-col">
-												<a href="#" class="item">女装</a>
-												<a href="#" class="item">箱包</a>
-												<a href="#" class="item">手机</a>
-												<a href="#" class="item">手表</a>
-												<a href="#" class="item">游戏</a>
-												<a href="#" class="item">鲜花</a>
-												<a href="#" class="item">装修</a>
-												<a href="#" class="item">汽车</a>
-												<a href="#" class="item">教育</a>
-											</div>
-											<div class="item-col">
-												<a href="#" class="item">男装</a>
-												<a href="#" class="item">婴童</a>
-												<a href="#" class="item">美妆</a>
-												<a href="#" class="item">运动</a>
-												<a href="#" class="item">动漫</a>
-												<a href="#" class="item">宠物</a>
-												<a href="#" class="item">建材</a>
-												<a href="#" class="item">二手车</a>
-												<a href="#" class="item">卡券</a>
-											</div>
-											<div class="item-col">
-												<a href="#" class="item">内衣</a>
-												<a href="#" class="item">家电</a>
-												<a href="#" class="item">珠宝</a>
-												<a href="#" class="item">户外</a>
-												<a href="#" class="item">影视</a>
-												<a href="#" class="item">农资</a>
-												<a href="#" class="item">家居</a>
-												<a href="#" class="item">办公</a>
-												<a href="#" class="item">本地</a>
-											</div>
-											<div class="item-col">
-												<a href="#" class="item">鞋靴</a>
-												<a href="#" class="item">数码</a>
-												<a href="#" class="item">眼镜</a>
-												<a href="#" class="item">乐器</a>
-												<a href="#" class="item">美食</a>
-												<a href="#" class="item">房产</a>
-												<a href="#" class="item">百货</a>
-												<a href="#" class="item">定制</a>
-											</div>
-										</div>
+						</div>
+						<div id="website-propagation" class="dropdown">
+							<a href="#" class="link red">网站导航</a>
+							<div id="dropdown-content" class="dropdown-content">
+								<div id="theme-market" class="propagations">
+									<div class="title">
+										主题市场
 									</div>
-									<div id="characteristic-market" class="propagations">
-										<div class="title">
-											特色市场
+									<div class="item-container">
+										<div class="item-col">
+											<a href="#" class="item">女装</a>
+											<a href="#" class="item">箱包</a>
+											<a href="#" class="item">手机</a>
+											<a href="#" class="item">手表</a>
+											<a href="#" class="item">游戏</a>
+											<a href="#" class="item">鲜花</a>
+											<a href="#" class="item">装修</a>
+											<a href="#" class="item">汽车</a>
+											<a href="#" class="item">教育</a>
 										</div>
-										<div class="item-container">
-											<div class="item-col">
-												<a href="#" class="item">全球购</a>
-												<a href="#" class="item">淘宝众筹</a>
-												<a href="#" class="item">天天特卖</a>
-												<a href="#" class="item">试用</a>
-											</div>
-											<div class="item-col">
-												<a href="#" class="item">极有家</a>
-												<a href="#" class="item">飞猪</a>
-												<a href="#" class="item">Outlets</a>
-												<a href="#" class="item">量贩团</a>
-											</div>
-											<div class="item-col">
-												<a href="#" class="item">阿里拍卖</a>
-												<a href="#" class="item">农资</a>
-												<a href="#" class="item">淘抢购</a>
-												<a href="#" class="item">阿里翻译</a>
-											</div>
+										<div class="item-col">
+											<a href="#" class="item">男装</a>
+											<a href="#" class="item">婴童</a>
+											<a href="#" class="item">美妆</a>
+											<a href="#" class="item">运动</a>
+											<a href="#" class="item">动漫</a>
+											<a href="#" class="item">宠物</a>
+											<a href="#" class="item">建材</a>
+											<a href="#" class="item">二手车</a>
+											<a href="#" class="item">卡券</a>
 										</div>
-									</div>
-									<div id="aliapp" class="propagations">
-										<div class="title">
-											阿里APP
+										<div class="item-col">
+											<a href="#" class="item">内衣</a>
+											<a href="#" class="item">家电</a>
+											<a href="#" class="item">珠宝</a>
+											<a href="#" class="item">户外</a>
+											<a href="#" class="item">影视</a>
+											<a href="#" class="item">农资</a>
+											<a href="#" class="item">家居</a>
+											<a href="#" class="item">办公</a>
+											<a href="#" class="item">本地</a>
 										</div>
-										<div class="item-container">
-											<div class="item-col">
-												<a href="#" class="item">淘宝</a>
-												<a href="#" class="item">聚划算</a>
-												<a href="#" class="item">咸鱼</a>
-												<a href="#" class="item">钉钉</a>
-												<a href="#" class="item">淘票票</a>
-												<a href="#" class="item">网商银行</a>
-											</div>
-											<div class="item-col">
-												<a href="#" class="item">天猫</a>
-												<a href="#" class="item">飞猪</a>
-												<a href="#" class="item">淘小铺</a>
-												<a href="#" class="item">高德地图</a>
-												<a href="#" class="item">菜鸟裹裹</a>
-												<a href="#" class="item">阿里邮箱</a>
-											</div>
-											<div class="item-col">
-												<a href="#" class="item">支付宝</a>
-												<a href="#" class="item">蚂蚁聚宝</a>
-												<a href="#" class="item">阿里钱盾</a>
-												<a href="#" class="item">虾米音乐</a>
-												<a href="#" class="item">阿里云</a>
-												<a href="#" class="item">阿里众包</a>
-											</div>
-										</div>
-									</div>
-									<div id="taobao-recommand" class="propagations">
-										<div class="title">
-											精彩推荐集
-										</div>
-										<div class="item-container">
-											<div class="item-col">
-												<a href="#" class="item">余额宝</a>
-												<a href="#" class="item">淘公仔</a>
-												<a href="#" class="item">淘宝香港</a>
-												<a href="#" class="item">淘宝全球</a>
-												<a href="#" class="item">闺蜜淘货</a>
-												<a href="#" class="item">淘工作</a>
-											</div>
-											<div class="item-col">
-												<a href="#" class="item">大牌捡宝</a>
-												<a href="#" class="item">浏览器</a>
-												<a href="#" class="item">淘宝台湾</a>
-												<a href="#" class="item">淘宝东南亚</a>
-												<a href="#" class="item">大众评审</a>
-												<a href="#" class="item">阿里巴巴认证</a>
-											</div>
+										<div class="item-col">
+											<a href="#" class="item">鞋靴</a>
+											<a href="#" class="item">数码</a>
+											<a href="#" class="item">眼镜</a>
+											<a href="#" class="item">乐器</a>
+											<a href="#" class="item">美食</a>
+											<a href="#" class="item">房产</a>
+											<a href="#" class="item">百货</a>
+											<a href="#" class="item">定制</a>
 										</div>
 									</div>
 								</div>
+								<div id="characteristic-market" class="propagations">
+									<div class="title">
+										特色市场
+									</div>
+									<div class="item-container">
+										<div class="item-col">
+											<a href="#" class="item">全球购</a>
+											<a href="#" class="item">淘宝众筹</a>
+											<a href="#" class="item">天天特卖</a>
+											<a href="#" class="item">试用</a>
+										</div>
+										<div class="item-col">
+											<a href="#" class="item">极有家</a>
+											<a href="#" class="item">飞猪</a>
+											<a href="#" class="item">Outlets</a>
+											<a href="#" class="item">量贩团</a>
+										</div>
+										<div class="item-col">
+											<a href="#" class="item">阿里拍卖</a>
+											<a href="#" class="item">农资</a>
+											<a href="#" class="item">淘抢购</a>
+											<a href="#" class="item">阿里翻译</a>
+										</div>
+									</div>
+								</div>
+								<div id="aliapp" class="propagations">
+									<div class="title">
+										阿里APP
+									</div>
+									<div class="item-container">
+										<div class="item-col">
+											<a href="#" class="item">淘宝</a>
+											<a href="#" class="item">聚划算</a>
+											<a href="#" class="item">咸鱼</a>
+											<a href="#" class="item">钉钉</a>
+											<a href="#" class="item">淘票票</a>
+											<a href="#" class="item">网商银行</a>
+										</div>
+										<div class="item-col">
+											<a href="#" class="item">天猫</a>
+											<a href="#" class="item">飞猪</a>
+											<a href="#" class="item">淘小铺</a>
+											<a href="#" class="item">高德地图</a>
+											<a href="#" class="item">菜鸟裹裹</a>
+											<a href="#" class="item">阿里邮箱</a>
+										</div>
+										<div class="item-col">
+											<a href="#" class="item">支付宝</a>
+											<a href="#" class="item">蚂蚁聚宝</a>
+											<a href="#" class="item">阿里钱盾</a>
+											<a href="#" class="item">虾米音乐</a>
+											<a href="#" class="item">阿里云</a>
+											<a href="#" class="item">阿里众包</a>
+										</div>
+									</div>
+								</div>
+								<div id="taobao-recommand" class="propagations">
+									<div class="title">
+										精彩推荐集
+									</div>
+									<div class="item-container">
+										<div class="item-col">
+											<a href="#" class="item">余额宝</a>
+											<a href="#" class="item">淘公仔</a>
+											<a href="#" class="item">淘宝香港</a>
+											<a href="#" class="item">淘宝全球</a>
+											<a href="#" class="item">闺蜜淘货</a>
+											<a href="#" class="item">淘工作</a>
+										</div>
+										<div class="item-col">
+											<a href="#" class="item">大牌捡宝</a>
+											<a href="#" class="item">浏览器</a>
+											<a href="#" class="item">淘宝台湾</a>
+											<a href="#" class="item">淘宝东南亚</a>
+											<a href="#" class="item">大众评审</a>
+											<a href="#" class="item">阿里巴巴认证</a>
+										</div>
+									</div>
+								</div>
 							</div>
-						
+						</div>
 					</div>
 				</div>
 			</div>
 			<div id="taoxiaopu">
 				<div id="taoxiaopu-content">
-					
+
 				</div>
 			</div>
 			<div id="search">
@@ -263,10 +274,10 @@
 							</div>
 						</div>
 						<div id="search-bar-container">
-							<input type="text" name="search-input" id="search-input" value="" placeholder="      omi欧米女包" class="magnifier"/>
+							<input type="text" name="search-input" id="search-input"placeholder="      omi欧米女包" class="magnifier" />
 							<div id="search-file-container">
 								<img src="./img/camera.png" id="search-file-img">
-								<input type="file" name="search-file" id="search-file" value="" />
+								<input type="file" name="search-file" id="search-file"/>
 							</div>
 							<input type="button" name="search-btn" id="search-btn" value="搜索" />
 						</div>
@@ -439,108 +450,108 @@
 											<a href="#" class="theme-link theme">女装</a>
 											<a href="#" class="theme-link theme">更多 ></a>
 										</div>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
 									</div>
 									<div class="theme-details">
 										<div class="theme-header">
 											<a href="#" class="theme-link theme">男装</a>
 											<a href="#" class="theme-link theme">更多 ></a>
 										</div>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
 									</div>
 									<div class="theme-details">
 										<div class="theme-header">
 											<a href="#" class="theme-link theme">内衣</a>
 											<a href="#" class="theme-link theme">更多 ></a>
 										</div>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装女女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装女</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
-										<a href="#", class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装女女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装女</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
+										<a href="#" , class="sub-theme">女装</a>
 									</div>
 								</div>
 								<div id="right-themes-details">
@@ -548,27 +559,27 @@
 										猜你喜欢
 									</div>
 									<div class="guess-you-like">
-										<img src="" >
+										<img src="">
 										柯家女专柜名品剪
 									</div>
 									<div class="guess-you-like">
-										<img src="" >
+										<img src="">
 										中老年女装新款羊
 									</div>
 									<div class="guess-you-like">
-										<img src="" >
+										<img src="">
 										【St.Roller官方网
 									</div>
 									<div class="guess-you-like">
-										<img src="" >
+										<img src="">
 										美裁 春秋冬新款
 									</div>
 									<div class="guess-you-like">
-										<img src="" >
+										<img src="">
 										包邮四皇冠德国进
 									</div>
 									<div class="guess-you-like">
-										<img src="" >
+										<img src="">
 										AngelField公主风
 									</div>
 								</div>
@@ -612,8 +623,8 @@
 											</div>
 											<div class="top-roll-ad">5</div>
 										</div>
-										<input type="button" id="top-prev" value="<"  class="btn"/>
-										<input type="button" id="top-next" value=">"  class="btn"/>
+										<input type="button" id="top-prev" value="<" class="btn" />
+										<input type="button" id="top-next" value=">" class="btn" />
 										<div id="top-bullets">
 											<div class="top-bullet focus"></div>
 											<div class="top-bullet"></div>
@@ -641,8 +652,8 @@
 											<div class="bottom-roll-ad">5</div>
 											<div class="bottom-roll-ad">6</div>
 										</div>
-										<input type="button" id="bottom-prev" value="<"  class="btn"/>
-										<input type="button" id="bottom-next" value=">"  class="btn"/>
+										<input type="button" id="bottom-prev" value="<" class="btn" />
+										<input type="button" id="bottom-next" value=">" class="btn" />
 									</div>
 								</div>
 								<div id="today-hotsell">
@@ -748,7 +759,7 @@
 											<img src="" class="aliapp">
 											<img src="" class="aliapp">
 											<img src="" class="aliapp">
-											<img src="" class="aliapp">											
+											<img src="" class="aliapp">
 										</div>
 									</div>
 								</div>
@@ -763,7 +774,7 @@
 						</div>
 						<div class="goods-container">
 							<div class="goods">
-								<img src="" >
+								<img src="">
 								<a href="#">申花 壁挂式家用空调挂</a>
 								<div class="introduce">
 									弧面设计，亮银装饰，时尚
@@ -771,7 +782,7 @@
 								<p>😃0人说好</p>
 							</div>
 							<div class="goods">
-								<img src="" >
+								<img src="">
 								<a href="#">海尔 一级节能冷藏柜</a>
 								<div class="introduce">
 									一级能耗等级，为你打造节
@@ -779,7 +790,7 @@
 								<p>😃2人说好</p>
 							</div>
 							<div class="goods">
-								<img src="" >
+								<img src="">
 								<a href="#">格力大1.5匹空调，好用</a>
 								<div class="introduce">
 									空调侧面设计灵感提取天鹅
@@ -787,7 +798,7 @@
 								<p>😃0人说好</p>
 							</div>
 							<div class="goods">
-								<img src="" >
+								<img src="">
 								<a href="#">海尔 制冷空调扇</a>
 								<div class="introduce">
 									空调扇一机多用，能加湿，
@@ -795,7 +806,7 @@
 								<p>😃0人说好</p>
 							</div>
 							<div class="goods">
-								<img src="" >
+								<img src="">
 								<a href="#">夏日的清凉，原来可以</a>
 								<div class="introduce">
 									有了移动空调，就是这么方
@@ -803,7 +814,7 @@
 								<p>😃0人说好</p>
 							</div>
 							<div class="goods">
-								<img src="" >
+								<img src="">
 								<a href="#">家用空调扇，清新空气</a>
 								<div class="introduce">
 									广角送风，确保清凉的气
@@ -819,7 +830,7 @@
 						<a href="#" class="more">更多 ></a>
 						<div class="goods-container">
 							<div class="loves">
-								<img src="" >
+								<img src="">
 								<a href="#">2017新款潮女士双肩包韩版时尚休闲百搭pu软皮背</a>
 								<div class="seller">
 									<div class="seller-icon"></div>
@@ -829,7 +840,7 @@
 								</div>
 							</div>
 							<div class="loves">
-								<img src="" >
+								<img src="">
 								<a href="#">美国艾蒂宝趴趴枕午睡枕趴睡枕学生小午睡神器办</a>
 								<div class="seller">
 									<div class="seller-icon"></div>
@@ -839,7 +850,7 @@
 								</div>
 							</div>
 							<div class="loves">
-								<img src="" >
+								<img src="">
 								<a href="#">香港进口特产美心原味鸡蛋卷32大条礼盒装儿童休</a>
 								<div class="seller">
 									<div class="seller-icon"></div>
@@ -849,7 +860,7 @@
 								</div>
 							</div>
 							<div class="loves">
-								<img src="" >
+								<img src="">
 								<a href="#">秋冬季棉拖鞋包跟厚底情侣家居防滑保暖居家男女</a>
 								<div class="seller">
 									<div class="seller-icon"></div>
@@ -859,7 +870,7 @@
 								</div>
 							</div>
 							<div class="loves">
-								<img src="" >
+								<img src="">
 								<a href="#">原创品牌日系学生单肩女包百搭休闲文艺小清新简</a>
 								<div class="seller">
 									<div class="seller-icon"></div>
@@ -869,7 +880,7 @@
 								</div>
 							</div>
 							<div class="loves">
-								<img src="" >
+								<img src="">
 								<a href="#">格莱达大容量保温杯男士保温壶户外不锈钢车载旅</a>
 								<div class="seller">
 									<div class="seller-icon"></div>
@@ -1015,7 +1026,7 @@
 									全球创意设计师平台
 								</div>
 								<div class="fashion-content">
-									
+
 								</div>
 							</div>
 							<div class="fashion border">
@@ -1024,7 +1035,7 @@
 									探索全球美好生活
 								</div>
 								<div class="fashion-content">
-									
+
 								</div>
 							</div>
 							<div class="fashion border">
@@ -1033,14 +1044,14 @@
 									奢品好物立即购
 								</div>
 								<div class="fashion-content">
-									
+
 								</div>
 							</div>
 						</div>
 					</div>
 					<div id="fashion-ad" class="container">
 						<div id="fashion-ad-content">
-							
+
 						</div>
 					</div>
 				</div>
@@ -1053,12 +1064,12 @@
 							<div id="left-quality-live">
 								<div class="row3 border">
 									<div class="row3-content quality-live">
-										
+
 									</div>
 								</div>
 								<div class="row1 border">
 									<div class="row1-content quality-live">
-										
+
 									</div>
 									<div class="row1-title">
 										极有家
@@ -1069,7 +1080,7 @@
 								</div>
 								<div class="row1 border">
 									<div class="row1-content quality-live">
-										
+
 									</div>
 									<div class="row1-title">
 										淘宝花鸟
@@ -1080,7 +1091,7 @@
 								</div>
 								<div class="row1 border">
 									<div class="row1-content quality-live">
-										
+
 									</div>
 									<div class="row1-title">
 										聚名品
@@ -1132,12 +1143,12 @@
 							<div id="left-characteristic-lover">
 								<div class="row3 border">
 									<div class="row3-content characteristic-lover">
-										
+
 									</div>
 								</div>
 								<div class="row1 border">
 									<div class="row1-content characteristic-lover">
-										
+
 									</div>
 									<div class="row1-title">
 										造点新货
@@ -1148,7 +1159,7 @@
 								</div>
 								<div class="row1 border">
 									<div class="row1-content characteristic-lover">
-										
+
 									</div>
 									<div class="row1-title">
 										淘宝心选
@@ -1159,7 +1170,7 @@
 								</div>
 								<div class="row1 border">
 									<div class="row1-content characteristic-lover">
-										
+
 									</div>
 									<div class="row1-title">
 										阿里汽车
@@ -1221,7 +1232,7 @@
 								<a href="#" class="affordable-link">全场包邮</a>
 							</div>
 							<div class="affordable-content">
-								
+
 							</div>
 						</div>
 						<div class="affordable border">
@@ -1236,7 +1247,7 @@
 								<a href="#" class="affordable-link">签到领金币</a>
 							</div>
 							<div class="affordable-content">
-								
+
 							</div>
 						</div>
 						<div class="affordable border">
@@ -1251,7 +1262,7 @@
 								<a href="#" class="affordable-link">0.01元疯抢</a>
 							</div>
 							<div class="affordable-content">
-								
+
 							</div>
 						</div>
 						<div class="affordable border">
@@ -1266,7 +1277,7 @@
 								<a href="#" class="affordable-link">抢专享券</a>
 							</div>
 							<div class="affordable-content">
-								
+
 							</div>
 						</div>
 						<div class="affordable border">
@@ -1281,7 +1292,7 @@
 								<a href="#" class="affordable-link">先用后买</a>
 							</div>
 							<div class="affordable-content">
-								
+
 							</div>
 						</div>
 					</div>
@@ -1318,7 +1329,7 @@
 					<div id="hot-container">
 						<div class="hot border">
 							<div class="hot-content">
-								
+
 							</div>
 							<a href="#" class="hot-title">苏泊尔 QS505不锈钢面板燃气灶双灶天然气灶</a>
 							<a href="#" class="hot-comment">评价 1785</a>
@@ -1331,7 +1342,7 @@
 						</div>
 						<div class="hot border">
 							<div class="hot-content">
-								
+
 							</div>
 							<a href="#" class="hot-title">苏泊尔净水器家用厨房水龙头过滤器自来水净</a>
 							<a href="#" class="hot-comment">评价 3203</a>
@@ -1344,7 +1355,7 @@
 						</div>
 						<div class="hot border">
 							<div class="hot-content">
-								
+
 							</div>
 							<a href="#" class="hot-title">苏泊尔 NK22燃气热水器天然气家用电恒温速</a>
 							<a href="#" class="hot-comment">评价 51</a>
@@ -1357,7 +1368,7 @@
 						</div>
 						<div class="hot border">
 							<div class="hot-content">
-								
+
 							</div>
 							<a href="#" class="hot-title">美菱M鲜生503L十字四开门双开门变频电冰箱</a>
 							<a href="#" class="hot-comment">评价 11</a>
@@ -1370,7 +1381,7 @@
 						</div>
 						<div class="hot border">
 							<div class="hot-content">
-								
+
 							</div>
 							<a href="#" class="hot-title">美菱M鲜生452L十字对开门冰箱家用四开门</a>
 							<a href="#" class="hot-comment">评价 10</a>
@@ -1383,7 +1394,7 @@
 						</div>
 						<div class="hot border">
 							<div class="hot-content">
-								
+
 							</div>
 							<a href="#" class="hot-title">Dutile/都太16室外燃气热水器家用20L24升恒</a>
 							<a href="#" class="hot-comment">评价 30</a>
@@ -1396,7 +1407,7 @@
 						</div>
 						<div class="hot border">
 							<div class="hot-content">
-								
+
 							</div>
 							<a href="#" class="hot-title">家用天然气液化气燃气灶</a>
 							<a href="#" class="hot-comment">评价 1150</a>
@@ -1409,7 +1420,7 @@
 						</div>
 						<div class="hot border">
 							<div class="hot-content">
-								
+
 							</div>
 							<a href="#" class="hot-title">不锈钢家用煤气灶燃气灶</a>
 							<a href="#" class="hot-comment">评价 116</a>
@@ -1422,7 +1433,7 @@
 						</div>
 						<div class="hot border">
 							<div class="hot-content">
-								
+
 							</div>
 							<a href="#" class="hot-title">爆款上新科大讯飞智能录音笔A1录音转文字</a>
 							<a href="#" class="hot-comment">评价 551</a>
@@ -1434,7 +1445,7 @@
 						</div>
 						<div class="hot border">
 							<div class="hot-content">
-								
+
 							</div>
 							<a href="#" class="hot-title">除湿机,打造干爽舒适的生活空间</a>
 							<a href="#" class="hot-comment">评价 664</a>
@@ -1459,7 +1470,7 @@
 					<div id="guess-your-favour-container">
 						<div class="guess-your-favour border">
 							<div class="guess-your-favour-content">
-								
+
 							</div>
 							<a href="#" class="guess-your-favour-title">有源低音炮 12寸超重低音箱音响 家庭影院大功率家用丹麦の</a>
 							<div class="guess-your-favour-price">
@@ -1474,7 +1485,7 @@
 						</div>
 						<div class="guess-your-favour border">
 							<div class="guess-your-favour-content">
-								
+
 							</div>
 							<a href="#" class="guess-your-favour-title">电信全网通4G7寸工业智能三防平板电脑手机NFC北斗导航安卓</a>
 							<div class="guess-your-favour-price">
@@ -1489,7 +1500,7 @@
 						</div>
 						<div class="guess-your-favour border">
 							<div class="guess-your-favour-content">
-								
+
 							</div>
 							<a href="#" class="guess-your-favour-title">【广州惠威扬声器专卖店】惠威SS12/SK12/K12HiFi12寸有源低音炮</a>
 							<div class="guess-your-favour-price">
@@ -1504,7 +1515,7 @@
 						</div>
 						<div class="guess-your-favour border">
 							<div class="guess-your-favour-content">
-								
+
 							</div>
 							<a href="#" class="guess-your-favour-title">泳衣遮肚les仙女范保守裙式泡温泉连体清新</a>
 							<div class="guess-your-favour-price">
@@ -1520,7 +1531,7 @@
 						</div>
 						<div class="guess-your-favour border">
 							<div class="guess-your-favour-content">
-								
+
 							</div>
 							<a href="#" class="guess-your-favour-title">Pipo/品铂 P7 WIFI 16GB RK3288 9.4英寸IPS高</a>
 							<div class="guess-your-favour-price">

@@ -274,11 +274,154 @@
 }
 
 #top-search {
-	height: 50px;
+	height: 47px;
 	background: #fff;
 	position: sticky;
 	z-index: 3;
 	width: 100%;
 	top: 0;
 	display: none;
+	padding-top: 7px;
+}
+
+#top-search-bar-container {
+	display: flex;
+	width: fit-content;
+	margin-left: 338px;
+}
+
+#top-search-input {
+	border: #FF2A00 solid 2px;
+	border-right: none;
+	border-left: none;
+	height: 34px;
+	width: 395px;
+	text-indent: 5px;
+}
+
+#top-search-input:focus {
+	border: #FF2A00 solid 2px;
+	border-right: none;
+	border-left: none;
+	outline: none;
+}
+
+#top-search-file-container {
+	height: 36px;
+	border-top: #FF2A00 solid 2px;
+	border-bottom: #FF2A00 solid 2px;
+}
+
+#top-search-file-img {
+	width: 22px;
+	margin: 8px 15px 0 40px;
+}
+
+#top-search-file-img:hover {
+	cursor: pointer;
+}
+
+#top-search-file {
+	width: 0px;
+}
+
+#top-search-btn {
+	background: linear-gradient(to right, #ff9500, #f50);
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	width: 74px;
+	border-radius: 0 19px 19px 0;
+	outline: none;
+	height: 40px;
+}
+
+#top-search-select {
+	width: 75px;
+	float: right;
+	overflow: hidden;
+	text-align: center;
+	border: none;
+	outline: none;
+	height: 40px;
+}
+
+.top-search-select {
+	background: #E8E8E8;
+	height: 25px;
+	padding-top: 11px;
+}
+
+.top-search-select:first-of-type {
+	border: #FF2A00 solid 2px;
+	border-right: none;
+	border-radius: 19px 0 0 19px;
+}
+
+.top-search-select:nth-of-type(2):hover, 
+.top-search-select:last-of-type:hover {
+	color: #FF2A00;
+	font-weight: bold;
+}
+
+#top-search-select:hover {
+	background: #E8E8E8;
+	height: fit-content;
+	border-radius: 19px 0 0 0;
+}
+
+#propagation {
+	float: right;
+	right: 20px;
+	margin-top: 500px;
+	position: sticky;
+	z-index: 3;
+}
+
+.propagation {
+	display: block;
+	width: 30px;
+	height: 28px;
+	background: #fff;
+	border-bottom: #9C9C9C solid 1px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.propagation:first-of-type {
+	border-radius: 10px 10px 0 0;
+	color: #FF2A00;
+}
+
+.propagation:nth-of-type(2) {
+	color: #f00;
+}
+
+.propagation:nth-of-type(3) {
+	color: #8000ff;
+}
+
+.propagation:nth-of-type(4) {
+	color: #00aa7f;
+}
+
+.propagation:nth-of-type(5) {
+	color: #FF2A00;
+}
+
+.propagation:last-of-type {
+	border-radius: 0 0 10px 10px;
+	border: none;
+}
+
+.cur-propagation {
+	color: #fff !important;
+	font-weight: bold;
+	background: #FF2A00;
+}
+
+#top-btn {
+	color: #000;
 }

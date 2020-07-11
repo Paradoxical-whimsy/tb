@@ -1,12 +1,14 @@
 #search {
 	background: #fff;
+	height: 120px;
 }
 
 #search-content {
 	display: flex;
 	width: 1190px;
+	height: 120px;
 	margin: 0 auto;
-	overflow: hidden;
+	padding-left: 50px;
 }
 
 #left-ad {
@@ -98,6 +100,7 @@
 	font-size: 18px;
 	width: 74px;
 	border-radius: 0 19px 19px 0;
+	outline: none;
 }
 
 #search-recommands {

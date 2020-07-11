@@ -57,16 +57,59 @@ document.querySelector('#news-titles').addEventListener('mouseover', function(e)
 	}
 });
 
-//顶部搜索栏
+//顶部搜索栏和右侧导航栏
 let html = document.querySelector('html');
 let top_search = document.querySelector('#top-search');
+let propagation = document.querySelector('#propagation');
+let propagations = document.querySelectorAll('.propagation');
+let top_btn = document.querySelector('#top-btn');
 let is_hidden = true;
+let is_contact = false;
+let cur_propagation = 0;
 document.querySelector('body').onscroll = function() {
-	if (is_hidden && html.scrollTop > 1000) {
-		top_search.style.display = 'block';
+	if (is_hidden && html.scrollTop > 200) {
+		top_search.style.display = top_btn.style.display = 'block';
 		is_hidden = false;
-	} else if (!is_hidden && html.scrollTop < 1000) {
-		top_search.style.display = 'none';
+	} else if (!is_hidden && html.scrollTop < 200) {
+		top_search.style.display = top_btn.style.display = 'none';
 		is_hidden = true;
 	}
+	
+	if (!is_contact && html.scrollTop > 200) {
+		propagation.style.top = '77px';
+		is_contact = true;
+	} else if (is_contact && html.scrollTop < 200) {
+		propagation.style.top = '0px';
+		is_contact = false;
+	}
 };
+
+let top_search_select = document.querySelectorAll('.top-search-select');
+document.querySelector('#top-search-select').addEventListener('click', function(e) {
+	switch (e.target.id) {
+		case 'search-second':
+			[top_search_select[0].innerHTML, top_search_select[1].innerHTML] = [top_search_select[1].innerHTML, top_search_select[0].innerHTML];
+			break;
+		case 'search-third':
+			[top_search_select[0].innerHTML, top_search_select[1].innerHTML, top_search_select[2].innerHTML] = [top_search_select[1].innerHTML, top_search_select[2].innerHTML, top_search_select[0].innerHTML];
+			break;
+		default:
+			break;
+	}
+});
+
+document.querySelector('#top-search-input').addEventListener('keyup', (e) => e.target.className = e.target.value ? '' : 'magnifier');
+
+propagation.addEventListener('click', function(e) {
+	let id = e.target.id;
+	if (id[0] === 'l') {
+		window.scrollTo({top: document.querySelector(`#${id.slice(2)}`).offsetTop, behavior: 'smooth'});
+	}
+	for (let i = 0; i < 5; i++) {
+		if (propagations[i] === e.target && i !== cur_propagation) {
+			[propagations[i].className, propagations[cur_propagation].className] = ['propagation cur-propagation', 'propagation'];
+			cur_propagation = i;
+			break;
+		}
+	}
+});
