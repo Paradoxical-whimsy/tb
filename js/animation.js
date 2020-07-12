@@ -51,7 +51,7 @@ function slideTo(index, n) {
 	} else if (n === 1) {
 		document.querySelector('.bottom-bullet.focus').className = 'bottom-bullet';
 		bullets[n][focusIndex[n]].className = 'bottom-bullet focus';
-		document.querySelector('#cur-num').innerHTML = index;
+		document.querySelector('#cur-num').innerHTML = focusIndex[n] + 1;
 	}
 
 	let left = -index * liWidth[n];
