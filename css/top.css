@@ -287,7 +287,8 @@
 #top-search-bar-container {
 	display: flex;
 	width: fit-content;
-	margin-left: 338px;
+	padding: 0 302px 0 258px;
+	margin: 0 auto;
 }
 
 #top-search-input {
