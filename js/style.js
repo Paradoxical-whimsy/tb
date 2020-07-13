@@ -92,6 +92,8 @@ document.querySelector('#top-search-select').addEventListener('click', function(
 });
 
 document.querySelector('#top-search-input').addEventListener('keyup', (e) => e.target.className = e.target.value ? '' : 'magnifier');
+let top_search_file = document.querySelector('#top-search-file');
+document.querySelector('#top-search-file-img').onclick = () => top_search_file.click();
 
 propagation.addEventListener('click', function(e) {
 	let id = e.target.id;
