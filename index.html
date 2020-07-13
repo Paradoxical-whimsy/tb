@@ -1692,7 +1692,11 @@
 				</div>
 			</div>
 		</div>
-		<script src="./js/style.js" type="text/javascript" charset="utf-8"></script>
-		<script src="./js/animation.js" type="text/javascript"></script>
+		<script src="./js/style.js" type="module" charset="utf-8"></script>
+		<script type="module">
+			import init from './js/animation.js'
+			init('top', 0);
+			init('bottom', 1);
+		</script>
 	</body>
 </html>

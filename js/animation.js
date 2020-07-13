@@ -69,7 +69,7 @@ function stop(n) {
 	clearInterval(id[n]);
 }
 
-function init(el, n) {
+export default function init(el, n) {
 	curIndex[n] = 1;
 	let li_1 = document.querySelector(`.${el}-roll-ad:first-of-type`);
 	let copy_1 = li_1.cloneNode(true);
@@ -106,6 +106,3 @@ function init(el, n) {
 	document.querySelector(`#${el}-roll-ad`).onmouseout = () => auto(n);
 	auto(n);
 }
-
-init('top', 0);
-init('bottom', 1);
